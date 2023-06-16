@@ -31,7 +31,6 @@ export const Dashboard = ({ navigation }) => {
     setIsFetching(true);
 
     const data = await GetPeopleList();
-    console.log(data);
 
     if (data) {
       setListResult({

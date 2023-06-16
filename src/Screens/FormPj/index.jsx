@@ -48,15 +48,6 @@ export const FormPj = ({ navigation }) => {
         });
       }
 
-      if (userData.address.length < 4) {
-        invalidFields.push("address");
-
-        setUserData({
-          ...userData,
-          invalidFields: invalidFields,
-        });
-      }
-
       if (userData.nameRep.length < 4) {
         invalidFields.push("nameRep");
 
